@@ -36,7 +36,7 @@ public class ListController {
 
     @GetMapping(value = "")
     public String list(Model model) {
-        model.addAttribute("title", "JobList");
+     //   model.addAttribute("title", "JobList");
         model.addAttribute("columns",columnChoices);
         model.addAttribute("tableChoices", tableChoices);
         model.addAttribute("employers", JobData.getAllEmployers());
